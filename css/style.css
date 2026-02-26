@@ -52,15 +52,14 @@ a {
   padding-bottom: 120px;
 }
 
-/* ======== HEADER ======== */
-
 .header-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; /*мини-адаптация меню*/
+  border-bottom: 1px solid #e7e9fc;
 }
 
-/* ======== LOGO ======== */
+/* ======== HEADER ======== */
 
 .logo {
   display: flex;
@@ -79,17 +78,39 @@ a {
   gap: 40px;
 }
 
+.nav-menu-link {
+  display: block;
+  padding: 24px 0;
+
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+/* body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #434455;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+} */
+
 /* ======== ADDRESS ======== */
 
-.address-list {
+.contact-list {
   display: flex;
   gap: 40px;
 }
 
-.link {
+.contact-link {
   display: block;
   padding: 24px 0;
+
+  color: #2e2f42;
+  font-style: normal;
 }
+
 /* ======== HERO ======== */
 
 .hero {
@@ -102,6 +123,9 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 48px;
+}
+
+.button {
 }
 
 /* ======== ADVANTAGES ======== */
@@ -123,11 +147,11 @@ a {
 .advantages-list {
   display: flex;
   gap: 24px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .advantages-item {
-  flex-basis: calc(100% - (24px + 24px + 24px) / 4);
+  flex-basis: calc((100% - (24px + 24px + 24px)) / 4);
 }
 
 /* ======== TEAM ======== */
@@ -160,6 +184,12 @@ a {
 }
 
 /* ======== PORTFOLIO ======== */
+.portfolio-thumb {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
 
 /* ======== FOOTER ======== */
 .footer-section {
@@ -171,11 +201,4 @@ a {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-}
-
-.portfolio-thumb {
-  padding: 32px 16px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
 }
