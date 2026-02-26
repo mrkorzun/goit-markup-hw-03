@@ -52,11 +52,14 @@ a {
   padding-bottom: 120px;
 }
 
+.page {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; /*мини-адаптация меню*/
-  border-bottom: 1px solid #e7e9fc;
 }
 
 h2 {
