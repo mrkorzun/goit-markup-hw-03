@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+/* .main {
+  flex-grow: 1;
+} */
+
 .container {
   max-width: 1158px;
   padding-left: 15px;
@@ -53,6 +57,7 @@ a {
 .header-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /*мини-адаптация меню*/
 }
 
 /* ======== LOGO ======== */
@@ -118,7 +123,7 @@ a {
 .advantages-list {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .advantages-item {
@@ -126,15 +131,14 @@ a {
 }
 
 /* ======== TEAM ======== */
+.our-team {
+  background-color: #f4f4fd;
+}
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-}
-
-.our-team {
-  background-color: #f4f4fd;
 }
 
 .section h2 {
@@ -156,3 +160,22 @@ a {
 }
 
 /* ======== PORTFOLIO ======== */
+
+/* ======== FOOTER ======== */
+.footer-section {
+  background-color: #2e2f42;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-thumb {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
